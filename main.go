@@ -2,11 +2,15 @@ package main
 
 import (
 	"Minimalist_Web_Application--StudentInfo_Managment_System/controller"
+	"Minimalist_Web_Application--StudentInfo_Managment_System/db"
 	"net/http"
 	_ "net/http/pprof"
 )
 
 func main() {
+	// 启动数据库连接
+	db.Connect()
+
 	// 路由注册
 	controller.RegisterRoutes()
 

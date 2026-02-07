@@ -2,41 +2,41 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>学生信息管理系统--修改学生信息功能</title>
+    <title>学生信息管理系统--添加学生信息功能</title>
 </head>
 <body>
-<h1 align="center">学生信息管理系统--修改学习信息功能</h1>
+<h1 align="center">学生信息管理系统--添加学习信息功能</h1>
 
 <!-- 表单区域，整体居中 -->
-<div align="center" style="display: flex; flex-direction: column; gap: 15px; width: 300px; margin: 0 auto;">
+<form action="/change" method="POST" align="center" style="display: flex; flex-direction: column; gap: 15px; width: 300px; margin: 0 auto;">
 
     <!-- 学号输入框 -->
     <label>学号：</label>
-    <input type="text" style="padding: 12px 24px; font-size: 18px; width: 100%;">
+    <input type="text" name="id" style="padding: 12px 24px; font-size: 18px; width: 100%;">
 
     <!-- 姓名输入框 -->
     <label>姓名：</label>
-    <input type="text" style="padding: 12px 24px; font-size: 18px; width: 100%;">
+    <input type="text" name="name" style="padding: 12px 24px; font-size: 18px; width: 100%;">
 
     <!-- 性别输入框 -->
     <label>性别：</label>
-    <input type="text" style="padding: 12px 24px; font-size: 18px; width: 100%;">
+    <input type="text" name="gender" style="padding: 12px 24px; font-size: 18px; width: 100%;">
 
     <!-- 年龄输入框 -->
     <label>年龄：</label>
-    <input type="number" style="padding: 12px 24px; font-size: 18px; width: 100%;">
+    <input type="number" name="age" style="padding: 12px 24px; font-size: 18px; width: 100%;">
 
     <!-- 联系方式输入框 -->
     <label>联系方式：</label>
-    <input type="text" style="padding: 12px 24px; font-size: 18px; width: 100%;">
+    <input type="text" name="phone" style="padding: 12px 24px; font-size: 18px; width: 100%;">
 
     <!-- 家庭住址输入框 -->
     <label>家庭住址：</label>
-    <input type="text" style="padding: 12px 24px; font-size: 18px; width: 100%;">
+    <input type="text" name="address" style="padding: 12px 24px; font-size: 18px; width: 100%;">
 
     <!-- 确定按钮，尺寸与首页一致 -->
     <button type="submit" style="padding: 24px 48px; font-size: 24px; margin-top: 10px;">确定修改</button>
 
-</div>
+</form>
 </body>
 </html>
